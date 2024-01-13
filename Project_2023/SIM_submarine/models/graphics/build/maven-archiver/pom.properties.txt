@@ -1,0 +1,4 @@
+#Created by Apache Maven 3.0.5
+version=23.0.0-beta
+groupId=trick-java
+artifactId=trick-java

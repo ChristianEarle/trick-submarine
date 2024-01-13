@@ -1,0 +1,53 @@
+/************************************************************************
+PURPOSE: (Simulate a submarine.)
+LIBRARY DEPENDENCIES:
+    ((submarine/src/Submarine.o))
+**************************************************************************/
+#ifndef SUBMARINE_HH
+#define SUBMARINE_HH
+
+// Density of salt water = 1023.6 kg/m^3
+#define DENSITY_SALT_WATER 1023.6
+// Acceleration of gravity = 9.80665 m/s^2
+#define GRAVITY 9.80665
+//
+#define CONVERSION_PASCALS_TO_PSI 1.4504e-4
+
+class Submarine {
+    public:
+
+    // Parameters
+    double outer_hull_outer_radius;
+    double outer_hull_inner_radius;
+    double inner_hull_outer_radius;
+    double inner_hull_inner_radius;
+    double hull_length;
+    double ballast_tank_volume;
+    double hard_ballast_mass;
+    double hull_mass;
+    double payload_mass;
+    double Cd;
+
+    // State Variables (Uncalculated Variables)
+	double pos[2];
+	double vel[2];
+    double ballast_energy;  // joules
+    double pump_power;      // watts
+
+    // Calculated Variables
+	double acc[2];
+
+    // Control Variable
+    double ballast_air_ratio;     // To the GUI.
+    double water_pressure_pascals;
+    double water_pressure_PSI;    // To the GUI.
+    int    pump_power_command;    // From the GUI.
+
+    // Methods
+
+    // =============================================
+    // Project: Add member function prototypes here.
+    // =============================================
+
+};
+#endif

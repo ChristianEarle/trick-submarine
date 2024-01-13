@@ -1,0 +1,817 @@
+S_define:21:6: warning: missing terminating " character [enabled by default]
+     ("integration) trick_ret= submarine_integ();
+      ^
+In file included from S_source.hh:27:0:
+models/submarine/include/Submarine.hh:6:0: error: unterminated #ifndef
+ #ifndef SUBMARINE_HH
+ ^
+In file included from /home/caci114/Project_2023/SIM_submarine/S_source.hh:27:
+[1m/home/caci114/Project_2023/SIM_submarine/models/submarine/include/Submarine.hh:6:2: [0m[0;1;31merror: [0m[1munterminated conditional directive[0m
+#ifndef SUBMARINE_HH
+[0;1;32m ^
+[0m[1m/home/caci114/Project_2023/SIM_submarine/models/submarine/include/Submarine.hh:67:2: [0m[0;1;31merror: [0m[1mexpected ';' after class[0m
+}
+[0;1;32m ^
+[0m[0;32m ;
+[0m[1m/home/caci114/Project_2023/SIM_submarine/S_source.hh:822:63: [0m[0;1;31merror: [0m[1minvalid suffix on literal; C++11 requires a space between literal and identifier[0m
+            job = this->add_job(0, 3, "integration, NULL, 1, "submarine_integ", "", 60000) ;
+[0;1;32m                                                              ^
+[0m[0;32m                                                               
+[0m[1m/home/caci114/Project_2023/SIM_submarine/S_source.hh:822:63: [0m[0;1;31merror: [0m[1mexpected ')'[0m
+[1m/home/caci114/Project_2023/SIM_submarine/S_source.hh:822:32: [0m[0;1;30mnote: [0mto match this '('[0m
+            job = this->add_job(0, 3, "integration, NULL, 1, "submarine_integ", "", 60000) ;
+[0;1;32m                               ^
+[0mIn file included from build/../S_source.hh:27:0,
+                 from build/S_source.cpp:3:
+models/submarine/include/Submarine.hh:6:0: error: unterminated #ifndef
+ #ifndef SUBMARINE_HH
+ ^
+In file included from build/S_source.cpp:3:0:
+build/../S_source.hh:822:82: warning: missing terminating " character [enabled by default]
+             job = this->add_job(0, 3, "integration, NULL, 1, "submarine_integ", "", 60000) ;
+                                                                                  ^
+build/../S_source.hh:822:13: error: missing terminating " character
+             job = this->add_job(0, 3, "integration, NULL, 1, "submarine_integ", "", 60000) ;
+             ^
+In file included from build/../S_source.hh:27:0,
+                 from build/S_source.cpp:3:
+models/submarine/include/Submarine.hh:67:1: error: expected ‘;’ after class definition
+ }
+ ^
+In file included from build/S_source.cpp:3:0:
+build/../S_source.hh: In constructor ‘SubmarineSimObject::SubmarineSimObject()’:
+build/../S_source.hh:822:63: error: expected ‘)’ before ‘submarine_integ’
+             job = this->add_job(0, 3, "integration, NULL, 1, "submarine_integ", "", 60000) ;
+                                                               ^
+build/S_source.cpp: In member function ‘virtual int SubmarineSimObject::call_function(Trick::JobData*)’:
+build/S_source.cpp:1007:28: error: ‘submarine_init’ was not declared in this scope
+             submarine_init() ;
+                            ^
+build/S_source.cpp:1010:36: error: ‘submarine_default_data’ was not declared in this scope
+             submarine_default_data() ;
+                                    ^
+build/S_source.cpp:1013:29: error: ‘submarine_deriv’ was not declared in this scope
+             submarine_deriv() ;
+                             ^
+build/S_source.cpp:1016:40: error: ‘submarine_integ’ was not declared in this scope
+             trick_ret= submarine_integ() ;
+                                        ^
+build/S_source.cpp:1019:32: error: ‘submarine_shutdown’ was not declared in this scope
+             submarine_shutdown() ;
+                                ^
+[1m/home/caci114/Project_2023/SIM_submarine/S_source.hh:822:63: [0m[0;1;31merror: [0m[1minvalid suffix on literal; C++11 requires a space between literal and identifier[0m
+            job = this->add_job(0, 3, "integration, NULL, 1, "submarine_integ", "", 60000) ;
+[0;1;32m                                                              ^
+[0m[0;32m                                                               
+[0m[1m/home/caci114/Project_2023/SIM_submarine/S_source.hh:822:63: [0m[0;1;31merror: [0m[1mexpected ')'[0m
+[1m/home/caci114/Project_2023/SIM_submarine/S_source.hh:822:32: [0m[0;1;30mnote: [0mto match this '('[0m
+            job = this->add_job(0, 3, "integration, NULL, 1, "submarine_integ", "", 60000) ;
+[0;1;32m                               ^
+[0mIn file included from build/S_source.cpp:3:0:
+build/../S_source.hh:822:82: warning: missing terminating " character [enabled by default]
+             job = this->add_job(0, 3, "integration, NULL, 1, "submarine_integ", "", 60000) ;
+                                                                                  ^
+build/../S_source.hh:822:13: error: missing terminating " character
+             job = this->add_job(0, 3, "integration, NULL, 1, "submarine_integ", "", 60000) ;
+             ^
+build/../S_source.hh: In constructor ‘SubmarineSimObject::SubmarineSimObject()’:
+build/../S_source.hh:822:63: error: expected ‘)’ before ‘submarine_integ’
+             job = this->add_job(0, 3, "integration, NULL, 1, "submarine_integ", "", 60000) ;
+                                                               ^
+build/S_source.cpp: In member function ‘virtual int SubmarineSimObject::call_function(Trick::JobData*)’:
+build/S_source.cpp:1007:28: error: ‘submarine_init’ was not declared in this scope
+             submarine_init() ;
+                            ^
+build/S_source.cpp:1010:36: error: ‘submarine_default_data’ was not declared in this scope
+             submarine_default_data() ;
+                                    ^
+build/S_source.cpp:1013:29: error: ‘submarine_deriv’ was not declared in this scope
+             submarine_deriv() ;
+                             ^
+build/S_source.cpp:1016:40: error: ‘submarine_integ’ was not declared in this scope
+             trick_ret= submarine_integ() ;
+                                        ^
+build/S_source.cpp:1019:32: error: ‘submarine_shutdown’ was not declared in this scope
+             submarine_shutdown() ;
+                                ^
+build/S_source.cpp: In member function ‘virtual int SubmarineSimObject::call_function(Trick::JobData*)’:
+build/S_source.cpp:1007:28: error: ‘submarine_init’ was not declared in this scope
+             submarine_init() ;
+                            ^
+build/S_source.cpp:1010:36: error: ‘submarine_default_data’ was not declared in this scope
+             submarine_default_data() ;
+                                    ^
+build/S_source.cpp:1013:29: error: ‘submarine_deriv’ was not declared in this scope
+             submarine_deriv() ;
+                             ^
+build/S_source.cpp:1016:41: error: ‘submarine_integ’ was not declared in this scope
+             trick_ret = submarine_integ() ;
+                                         ^
+build/S_source.cpp:1019:32: error: ‘submarine_shutdown’ was not declared in this scope
+             submarine_shutdown() ;
+                                ^
+build/S_source.cpp: In member function ‘virtual int SubmarineSimObject::call_function(Trick::JobData*)’:
+build/S_source.cpp:1007:28: error: ‘submarine_init’ was not declared in this scope
+             submarine_init() ;
+                            ^
+build/S_source.cpp:1010:36: error: ‘submarine_default_data’ was not declared in this scope
+             submarine_default_data() ;
+                                    ^
+build/S_source.cpp:1013:29: error: ‘submarine_deriv’ was not declared in this scope
+             submarine_deriv() ;
+                             ^
+build/S_source.cpp:1016:41: error: ‘submarine_integ’ was not declared in this scope
+             trick_ret = submarine_integ() ;
+                                         ^
+build/S_source.cpp:1019:32: error: ‘submarine_shutdown’ was not declared in this scope
+             submarine_shutdown() ;
+                                ^
+build/S_source.cpp: In member function ‘virtual int SubmarineSimObject::call_function(Trick::JobData*)’:
+build/S_source.cpp:1007:28: error: ‘submarine_init’ was not declared in this scope
+             submarine_init() ;
+                            ^
+build/S_source.cpp:1010:36: error: ‘submarine_default_data’ was not declared in this scope
+             submarine_default_data() ;
+                                    ^
+build/S_source.cpp:1013:29: error: ‘submarine_deriv’ was not declared in this scope
+             submarine_deriv() ;
+                             ^
+build/S_source.cpp:1016:41: error: ‘submarine_integ’ was not declared in this scope
+             trick_ret = submarine_integ() ;
+                                         ^
+build/S_source.cpp:1019:32: error: ‘submarine_shutdown’ was not declared in this scope
+             submarine_shutdown() ;
+                                ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_deriv()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:12:27: error: ‘DENISTY_SALT_WATER’ was not declared in this scope
+  water_pressure_pascals = DENISTY_SALT_WATER * GRAVITY * (-pos[1]) + ATMOS_PRESSURE;//Water Pressure Pascals
+                           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:27:58: error: ‘exp’ was not declared in this scope
+   hull_disp_volume = hull_volume / (1 + exp(-5.5 * pos[1]));
+                                                          ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:29:14: error: expected primary-expression before ‘<’ token
+  if (pos[1] =< -1.3) {
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:36:10: error: ‘outer_hull_radius’ was not declared in this scope
+  A = 2 * outer_hull_radius * hull_length; //Cross Sectional Area
+          ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:38:64: error: ‘abs’ was not declared in this scope
+  drag_force = (-0.5) * DENISTY_SALT_WATER * vel[1] * abs(vel[1]) * Cd * A; //Force of Drag
+                                                                ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_integ()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:58:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_state(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:65:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_deriv(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:75:13: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void unload_state(double*, ...)’
+         NULL);
+             ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_deriv()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:12:27: error: ‘DENISTY_SALT_WATER’ was not declared in this scope
+  water_pressure_pascals = DENISTY_SALT_WATER * GRAVITY * (-pos[1]) + ATMOS_PRESSURE;//Water Pressure Pascals
+                           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:27:58: error: ‘exp’ was not declared in this scope
+   hull_disp_volume = hull_volume / (1 + exp(-5.5 * pos[1]));
+                                                          ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:36:10: error: ‘outer_hull_radius’ was not declared in this scope
+  A = 2 * outer_hull_radius * hull_length; //Cross Sectional Area
+          ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:38:64: error: ‘abs’ was not declared in this scope
+  drag_force = (-0.5) * DENISTY_SALT_WATER * vel[1] * abs(vel[1]) * Cd * A; //Force of Drag
+                                                                ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_integ()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:58:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_state(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:65:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_deriv(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:75:13: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void unload_state(double*, ...)’
+         NULL);
+             ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_deriv()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:13:27: error: ‘DENISTY_SALT_WATER’ was not declared in this scope
+  water_pressure_pascals = DENISTY_SALT_WATER * GRAVITY * (-pos[1]) + ATMOS_PRESSURE;//Water Pressure Pascals
+                           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:37:10: error: ‘outer_hull_radius’ was not declared in this scope
+  A = 2 * outer_hull_radius * hull_length; //Cross Sectional Area
+          ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:39:64: error: ‘abs’ was not declared in this scope
+  drag_force = (-0.5) * DENISTY_SALT_WATER * vel[1] * abs(vel[1]) * Cd * A; //Force of Drag
+                                                                ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_integ()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:59:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_state(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:66:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_deriv(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:76:13: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void unload_state(double*, ...)’
+         NULL);
+             ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_deriv()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:13:27: error: ‘DENISTY_SALT_WATER’ was not declared in this scope
+  water_pressure_pascals = DENISTY_SALT_WATER * GRAVITY * (-pos[1]) + ATMOS_PRESSURE;//Water Pressure Pascals
+                           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:37:10: error: ‘outer_hull_radius’ was not declared in this scope
+  A = 2 * outer_hull_radius * hull_length; //Cross Sectional Area
+          ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:39:64: error: ‘abs’ was not declared in this scope
+  drag_force = (-0.5) * DENISTY_SALT_WATER * vel[1] * abs(vel[1]) * Cd * A; //Force of Drag
+                                                                ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_integ()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:59:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_state(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:66:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_deriv(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:76:13: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void unload_state(double*, ...)’
+         NULL);
+             ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_deriv()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:13:27: error: ‘DENISTY_SALT_WATER’ was not declared in this scope
+  water_pressure_pascals = DENISTY_SALT_WATER * GRAVITY * (-pos[1]) + ATMOS_PRESSURE;//Water Pressure Pascals
+                           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:39:64: error: ‘abs’ was not declared in this scope
+  drag_force = (-0.5) * DENISTY_SALT_WATER * vel[1] * abs(vel[1]) * Cd * A; //Force of Drag
+                                                                ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_integ()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:59:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_state(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:66:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_deriv(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:76:13: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void unload_state(double*, ...)’
+         NULL);
+             ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_deriv()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:13:27: error: ‘DENISTY_SALT_WATER’ was not declared in this scope
+  water_pressure_pascals = DENISTY_SALT_WATER * GRAVITY * (-pos[1]) + ATMOS_PRESSURE;//Water Pressure Pascals
+                           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:39:64: error: ‘abs’ was not declared in this scope
+  drag_force = (-0.5) * DENISTY_SALT_WATER * vel[1] * abs(vel[1]) * Cd * A; //Force of Drag
+                                                                ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_integ()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:59:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_state(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:66:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_deriv(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:76:13: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void unload_state(double*, ...)’
+         NULL);
+             ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_deriv()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:13:27: error: ‘DENISTY_SALT_WATER’ was not declared in this scope
+  water_pressure_pascals = DENISTY_SALT_WATER * GRAVITY * (-pos[1]) + ATMOS_PRESSURE;//Water Pressure Pascals
+                           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:39:64: error: ‘abs’ was not declared in this scope
+  drag_force = (-0.5) * DENISTY_SALT_WATER * vel[1] * abs(vel[1]) * Cd * A; //Force of Drag
+                                                                ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_integ()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:59:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_state(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:66:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_deriv(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:76:13: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void unload_state(double*, ...)’
+         NULL);
+             ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_deriv()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:13:27: error: ‘DENISTY_SALT_WATER’ was not declared in this scope
+  water_pressure_pascals = DENISTY_SALT_WATER * GRAVITY * (-pos[1]) + ATMOS_PRESSURE;//Water Pressure Pascals
+                           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:39:83: error: expected ‘)’ before ‘;’ token
+  drag_force = (-0.5) * DENISTY_SALT_WATER * vel[1] * (sqrt(vel[1]*vel[1]) * Cd * A; //Force of Drag
+                                                                                   ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_integ()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:59:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_state(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:66:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_deriv(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:76:13: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void unload_state(double*, ...)’
+         NULL);
+             ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_deriv()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:13:27: error: ‘DENISTY_SALT_WATER’ was not declared in this scope
+  water_pressure_pascals = DENISTY_SALT_WATER * GRAVITY * (-pos[1]) + ATMOS_PRESSURE;//Water Pressure Pascals
+                           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_integ()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:59:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_state(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:66:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_deriv(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:76:13: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void unload_state(double*, ...)’
+         NULL);
+             ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_integ()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:59:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_state(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:66:11: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void load_deriv(double*, ...)’
+       NULL);
+           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:76:13: error: cannot convert ‘double’ to ‘double*’ for argument ‘1’ to ‘void unload_state(double*, ...)’
+         NULL);
+             ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp: In member function ‘int Submarine::submarine_default_data()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:12:9: warning: declaration of ‘outer_hull_outer_radius’ shadows a member of 'this' [-Wshadow]
+  double outer_hull_outer_radius = 1.3; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:13:9: warning: declaration of ‘outer_hull_inner_radius’ shadows a member of 'this' [-Wshadow]
+  double outer_hull_inner_radius = 1.25; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:14:9: warning: declaration of ‘inner_hull_outer_radius’ shadows a member of 'this' [-Wshadow]
+  double inner_hull_outer_radius = 1.10; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:15:9: warning: declaration of ‘inner_hull_inner_radius’ shadows a member of 'this' [-Wshadow]
+  double inner_hull_inner_radius = 1.00; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:16:9: warning: declaration of ‘hull_length’ shadows a member of 'this' [-Wshadow]
+  double hull_length = 3.0; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:17:9: warning: declaration of ‘ballast_tank_volume’ shadows a member of 'this' [-Wshadow]
+  double ballast_tank_volume = 1.0; //cubic meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:18:9: warning: declaration of ‘hard_ballast_mass’ shadows a member of 'this' [-Wshadow]
+  double hard_ballast_mass = 0.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:19:9: warning: declaration of ‘hull_mass’ shadows a member of 'this' [-Wshadow]
+  double hull_mass = 10000.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:20:9: warning: declaration of ‘payload_mass’ shadows a member of 'this' [-Wshadow]
+  double payload_mass = 1500.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:21:9: warning: declaration of ‘Cd’ shadows a member of 'this' [-Wshadow]
+  double Cd = 0.5; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:22:14: warning: declaration of ‘pos’ shadows a member of 'this' [-Wshadow]
+  double pos[0] = 0.0; //meters x-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:22:18: error: array must be initialized with a brace-enclosed initializer
+  double pos[0] = 0.0; //meters x-direction
+                  ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:23:14: error: conflicting declaration ‘double pos [1]’
+  double pos[1] = 0.0; //meters y-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:22:9: error: ‘pos’ has a previous declaration as ‘double pos [0]’
+  double pos[0] = 0.0; //meters x-direction
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:24:14: warning: declaration of ‘vel’ shadows a member of 'this' [-Wshadow]
+  double vel[0] = 0.0; //mps x-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:24:18: error: array must be initialized with a brace-enclosed initializer
+  double vel[0] = 0.0; //mps x-direction
+                  ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:25:14: error: conflicting declaration ‘double vel [1]’
+  double vel[1] = 0.0; //mps y-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:24:9: error: ‘vel’ has a previous declaration as ‘double vel [0]’
+  double vel[0] = 0.0; //mps x-direction
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:12:9: warning: unused variable ‘outer_hull_outer_radius’ [-Wunused-variable]
+  double outer_hull_outer_radius = 1.3; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:13:9: warning: unused variable ‘outer_hull_inner_radius’ [-Wunused-variable]
+  double outer_hull_inner_radius = 1.25; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:14:9: warning: unused variable ‘inner_hull_outer_radius’ [-Wunused-variable]
+  double inner_hull_outer_radius = 1.10; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:15:9: warning: unused variable ‘inner_hull_inner_radius’ [-Wunused-variable]
+  double inner_hull_inner_radius = 1.00; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:16:9: warning: unused variable ‘hull_length’ [-Wunused-variable]
+  double hull_length = 3.0; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:17:9: warning: unused variable ‘ballast_tank_volume’ [-Wunused-variable]
+  double ballast_tank_volume = 1.0; //cubic meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:18:9: warning: unused variable ‘hard_ballast_mass’ [-Wunused-variable]
+  double hard_ballast_mass = 0.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:19:9: warning: unused variable ‘hull_mass’ [-Wunused-variable]
+  double hull_mass = 10000.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:20:9: warning: unused variable ‘payload_mass’ [-Wunused-variable]
+  double payload_mass = 1500.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:21:9: warning: unused variable ‘Cd’ [-Wunused-variable]
+  double Cd = 0.5; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:22:9: warning: unused variable ‘pos’ [-Wunused-variable]
+  double pos[0] = 0.0; //meters x-direction
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:24:9: warning: unused variable ‘vel’ [-Wunused-variable]
+  double vel[0] = 0.0; //mps x-direction
+         ^
+In file included from /home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:8:0,
+                 from /home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:9:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/../include/Submarine.hh:19:7: error: redefinition of ‘class Submarine’
+ class Submarine {
+       ^
+In file included from /home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:8:0:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../include/Submarine.hh:19:7: error: previous definition of ‘class Submarine’
+ class Submarine {
+       ^
+In file included from /home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:9:0:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp: In member function ‘int Submarine::submarine_default_data()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:12:9: warning: declaration of ‘outer_hull_outer_radius’ shadows a member of 'this' [-Wshadow]
+  double outer_hull_outer_radius = 1.3; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:13:9: warning: declaration of ‘outer_hull_inner_radius’ shadows a member of 'this' [-Wshadow]
+  double outer_hull_inner_radius = 1.25; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:14:9: warning: declaration of ‘inner_hull_outer_radius’ shadows a member of 'this' [-Wshadow]
+  double inner_hull_outer_radius = 1.10; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:15:9: warning: declaration of ‘inner_hull_inner_radius’ shadows a member of 'this' [-Wshadow]
+  double inner_hull_inner_radius = 1.00; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:16:9: warning: declaration of ‘hull_length’ shadows a member of 'this' [-Wshadow]
+  double hull_length = 3.0; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:17:9: warning: declaration of ‘ballast_tank_volume’ shadows a member of 'this' [-Wshadow]
+  double ballast_tank_volume = 1.0; //cubic meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:18:9: warning: declaration of ‘hard_ballast_mass’ shadows a member of 'this' [-Wshadow]
+  double hard_ballast_mass = 0.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:19:9: warning: declaration of ‘hull_mass’ shadows a member of 'this' [-Wshadow]
+  double hull_mass = 10000.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:20:9: warning: declaration of ‘payload_mass’ shadows a member of 'this' [-Wshadow]
+  double payload_mass = 1500.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:21:9: warning: declaration of ‘Cd’ shadows a member of 'this' [-Wshadow]
+  double Cd = 0.5; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:22:14: warning: declaration of ‘pos’ shadows a member of 'this' [-Wshadow]
+  double pos[0] = 0.0; //meters x-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:22:18: error: array must be initialized with a brace-enclosed initializer
+  double pos[0] = 0.0; //meters x-direction
+                  ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:23:14: error: conflicting declaration ‘double pos [1]’
+  double pos[1] = 0.0; //meters y-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:22:9: error: ‘pos’ has a previous declaration as ‘double pos [0]’
+  double pos[0] = 0.0; //meters x-direction
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:24:14: warning: declaration of ‘vel’ shadows a member of 'this' [-Wshadow]
+  double vel[0] = 0.0; //mps x-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:24:18: error: array must be initialized with a brace-enclosed initializer
+  double vel[0] = 0.0; //mps x-direction
+                  ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:25:14: error: conflicting declaration ‘double vel [1]’
+  double vel[1] = 0.0; //mps y-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:24:9: error: ‘vel’ has a previous declaration as ‘double vel [0]’
+  double vel[0] = 0.0; //mps x-direction
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:12:9: warning: unused variable ‘outer_hull_outer_radius’ [-Wunused-variable]
+  double outer_hull_outer_radius = 1.3; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:13:9: warning: unused variable ‘outer_hull_inner_radius’ [-Wunused-variable]
+  double outer_hull_inner_radius = 1.25; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:14:9: warning: unused variable ‘inner_hull_outer_radius’ [-Wunused-variable]
+  double inner_hull_outer_radius = 1.10; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:15:9: warning: unused variable ‘inner_hull_inner_radius’ [-Wunused-variable]
+  double inner_hull_inner_radius = 1.00; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:16:9: warning: unused variable ‘hull_length’ [-Wunused-variable]
+  double hull_length = 3.0; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:17:9: warning: unused variable ‘ballast_tank_volume’ [-Wunused-variable]
+  double ballast_tank_volume = 1.0; //cubic meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:18:9: warning: unused variable ‘hard_ballast_mass’ [-Wunused-variable]
+  double hard_ballast_mass = 0.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:19:9: warning: unused variable ‘hull_mass’ [-Wunused-variable]
+  double hull_mass = 10000.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:20:9: warning: unused variable ‘payload_mass’ [-Wunused-variable]
+  double payload_mass = 1500.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:21:9: warning: unused variable ‘Cd’ [-Wunused-variable]
+  double Cd = 0.5; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:22:9: warning: unused variable ‘pos’ [-Wunused-variable]
+  double pos[0] = 0.0; //meters x-direction
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:24:9: warning: unused variable ‘vel’ [-Wunused-variable]
+  double vel[0] = 0.0; //mps x-direction
+         ^
+In file included from /home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:8:0,
+                 from /home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:9:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/../include/Submarine.hh:19:7: error: redefinition of ‘class Submarine’
+ class Submarine {
+       ^
+In file included from /home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:8:0:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../include/Submarine.hh:19:7: error: previous definition of ‘class Submarine’
+ class Submarine {
+       ^
+In file included from /home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:9:0:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp: In member function ‘int Submarine::submarine_default_data()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:12:9: warning: declaration of ‘outer_hull_outer_radius’ shadows a member of 'this' [-Wshadow]
+  double outer_hull_outer_radius = 1.3; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:13:9: warning: declaration of ‘outer_hull_inner_radius’ shadows a member of 'this' [-Wshadow]
+  double outer_hull_inner_radius = 1.25; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:14:9: warning: declaration of ‘inner_hull_outer_radius’ shadows a member of 'this' [-Wshadow]
+  double inner_hull_outer_radius = 1.10; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:15:9: warning: declaration of ‘inner_hull_inner_radius’ shadows a member of 'this' [-Wshadow]
+  double inner_hull_inner_radius = 1.00; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:16:9: warning: declaration of ‘hull_length’ shadows a member of 'this' [-Wshadow]
+  double hull_length = 3.0; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:17:9: warning: declaration of ‘ballast_tank_volume’ shadows a member of 'this' [-Wshadow]
+  double ballast_tank_volume = 1.0; //cubic meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:18:9: warning: declaration of ‘hard_ballast_mass’ shadows a member of 'this' [-Wshadow]
+  double hard_ballast_mass = 0.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:19:9: warning: declaration of ‘hull_mass’ shadows a member of 'this' [-Wshadow]
+  double hull_mass = 10000.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:20:9: warning: declaration of ‘payload_mass’ shadows a member of 'this' [-Wshadow]
+  double payload_mass = 1500.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:21:9: warning: declaration of ‘Cd’ shadows a member of 'this' [-Wshadow]
+  double Cd = 0.5; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:22:14: warning: declaration of ‘pos’ shadows a member of 'this' [-Wshadow]
+  double pos[0] = 0.0; //meters x-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:22:18: error: array must be initialized with a brace-enclosed initializer
+  double pos[0] = 0.0; //meters x-direction
+                  ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:23:14: error: conflicting declaration ‘double pos [1]’
+  double pos[1] = 0.0; //meters y-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:22:9: error: ‘pos’ has a previous declaration as ‘double pos [0]’
+  double pos[0] = 0.0; //meters x-direction
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:24:14: warning: declaration of ‘vel’ shadows a member of 'this' [-Wshadow]
+  double vel[0] = 0.0; //mps x-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:24:18: error: array must be initialized with a brace-enclosed initializer
+  double vel[0] = 0.0; //mps x-direction
+                  ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:25:14: error: conflicting declaration ‘double vel [1]’
+  double vel[1] = 0.0; //mps y-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:24:9: error: ‘vel’ has a previous declaration as ‘double vel [0]’
+  double vel[0] = 0.0; //mps x-direction
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:12:9: warning: unused variable ‘outer_hull_outer_radius’ [-Wunused-variable]
+  double outer_hull_outer_radius = 1.3; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:13:9: warning: unused variable ‘outer_hull_inner_radius’ [-Wunused-variable]
+  double outer_hull_inner_radius = 1.25; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:14:9: warning: unused variable ‘inner_hull_outer_radius’ [-Wunused-variable]
+  double inner_hull_outer_radius = 1.10; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:15:9: warning: unused variable ‘inner_hull_inner_radius’ [-Wunused-variable]
+  double inner_hull_inner_radius = 1.00; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:16:9: warning: unused variable ‘hull_length’ [-Wunused-variable]
+  double hull_length = 3.0; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:17:9: warning: unused variable ‘ballast_tank_volume’ [-Wunused-variable]
+  double ballast_tank_volume = 1.0; //cubic meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:18:9: warning: unused variable ‘hard_ballast_mass’ [-Wunused-variable]
+  double hard_ballast_mass = 0.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:19:9: warning: unused variable ‘hull_mass’ [-Wunused-variable]
+  double hull_mass = 10000.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:20:9: warning: unused variable ‘payload_mass’ [-Wunused-variable]
+  double payload_mass = 1500.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:21:9: warning: unused variable ‘Cd’ [-Wunused-variable]
+  double Cd = 0.5; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:22:9: warning: unused variable ‘pos’ [-Wunused-variable]
+  double pos[0] = 0.0; //meters x-direction
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:24:9: warning: unused variable ‘vel’ [-Wunused-variable]
+  double vel[0] = 0.0; //mps x-direction
+         ^
+In file included from /home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:8:0,
+                 from /home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:9:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/../include/Submarine.hh:19:7: error: redefinition of ‘class Submarine’
+ class Submarine {
+       ^
+In file included from /home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:8:0:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../include/Submarine.hh:19:7: error: previous definition of ‘class Submarine’
+ class Submarine {
+       ^
+In file included from /home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:9:0:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp: In member function ‘int Submarine::submarine_default_data()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:12:9: warning: declaration of ‘outer_hull_outer_radius’ shadows a member of 'this' [-Wshadow]
+  double outer_hull_outer_radius = 1.3; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:13:9: warning: declaration of ‘outer_hull_inner_radius’ shadows a member of 'this' [-Wshadow]
+  double outer_hull_inner_radius = 1.25; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:14:9: warning: declaration of ‘inner_hull_outer_radius’ shadows a member of 'this' [-Wshadow]
+  double inner_hull_outer_radius = 1.10; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:15:9: warning: declaration of ‘inner_hull_inner_radius’ shadows a member of 'this' [-Wshadow]
+  double inner_hull_inner_radius = 1.00; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:16:9: warning: declaration of ‘hull_length’ shadows a member of 'this' [-Wshadow]
+  double hull_length = 3.0; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:17:9: warning: declaration of ‘ballast_tank_volume’ shadows a member of 'this' [-Wshadow]
+  double ballast_tank_volume = 1.0; //cubic meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:18:9: warning: declaration of ‘hard_ballast_mass’ shadows a member of 'this' [-Wshadow]
+  double hard_ballast_mass = 0.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:19:9: warning: declaration of ‘hull_mass’ shadows a member of 'this' [-Wshadow]
+  double hull_mass = 10000.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:20:9: warning: declaration of ‘payload_mass’ shadows a member of 'this' [-Wshadow]
+  double payload_mass = 1500.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:21:9: warning: declaration of ‘Cd’ shadows a member of 'this' [-Wshadow]
+  double Cd = 0.5; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:22:14: warning: declaration of ‘pos’ shadows a member of 'this' [-Wshadow]
+  double pos[0] = 0.0; //meters x-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:22:18: error: array must be initialized with a brace-enclosed initializer
+  double pos[0] = 0.0; //meters x-direction
+                  ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:23:14: error: conflicting declaration ‘double pos [1]’
+  double pos[1] = 0.0; //meters y-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:22:9: error: ‘pos’ has a previous declaration as ‘double pos [0]’
+  double pos[0] = 0.0; //meters x-direction
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:24:14: warning: declaration of ‘vel’ shadows a member of 'this' [-Wshadow]
+  double vel[0] = 0.0; //mps x-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:24:18: error: array must be initialized with a brace-enclosed initializer
+  double vel[0] = 0.0; //mps x-direction
+                  ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:25:14: error: conflicting declaration ‘double vel [1]’
+  double vel[1] = 0.0; //mps y-direction
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:24:9: error: ‘vel’ has a previous declaration as ‘double vel [0]’
+  double vel[0] = 0.0; //mps x-direction
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:12:9: warning: unused variable ‘outer_hull_outer_radius’ [-Wunused-variable]
+  double outer_hull_outer_radius = 1.3; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:13:9: warning: unused variable ‘outer_hull_inner_radius’ [-Wunused-variable]
+  double outer_hull_inner_radius = 1.25; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:14:9: warning: unused variable ‘inner_hull_outer_radius’ [-Wunused-variable]
+  double inner_hull_outer_radius = 1.10; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:15:9: warning: unused variable ‘inner_hull_inner_radius’ [-Wunused-variable]
+  double inner_hull_inner_radius = 1.00; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:16:9: warning: unused variable ‘hull_length’ [-Wunused-variable]
+  double hull_length = 3.0; //meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:17:9: warning: unused variable ‘ballast_tank_volume’ [-Wunused-variable]
+  double ballast_tank_volume = 1.0; //cubic meters
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:18:9: warning: unused variable ‘hard_ballast_mass’ [-Wunused-variable]
+  double hard_ballast_mass = 0.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:19:9: warning: unused variable ‘hull_mass’ [-Wunused-variable]
+  double hull_mass = 10000.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:20:9: warning: unused variable ‘payload_mass’ [-Wunused-variable]
+  double payload_mass = 1500.0; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:21:9: warning: unused variable ‘Cd’ [-Wunused-variable]
+  double Cd = 0.5; //kg
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:22:9: warning: unused variable ‘pos’ [-Wunused-variable]
+  double pos[0] = 0.0; //meters x-direction
+         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:24:9: warning: unused variable ‘vel’ [-Wunused-variable]
+  double vel[0] = 0.0; //mps x-direction
+         ^
+In file included from /home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:8:0,
+                 from /home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:9:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/../include/Submarine.hh:19:7: error: redefinition of ‘class Submarine’
+ class Submarine {
+       ^
+In file included from /home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:8:0:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../include/Submarine.hh:19:7: error: previous definition of ‘class Submarine’
+ class Submarine {
+       ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_shutdown.cpp:5:35: fatal error: ../include/submarine.hh: No such file or directory
+ #include "../include/submarine.hh"
+                                   ^
+compilation terminated.
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_shutdown.cpp: In function ‘int submarine_shutdown()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_shutdown.cpp:13:37: error: ‘pos’ was not declared in this scope
+     printf( "pos = [%.9f, %.9f]\n", pos[0], pos[1]);
+                                     ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_shutdown.cpp:14:37: error: ‘vel’ was not declared in this scope
+     printf( "vel = [%.9f, %.9f]\n", vel[0], vel[1]);
+                                     ^
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.o: In function `Submarine::submarine_default_data()':
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:11: multiple definition of `Submarine::submarine_default_data()'
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.o:/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:11: first defined here
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.o: In function `Submarine::submarine_init()':
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:29: multiple definition of `Submarine::submarine_init()'
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.o:/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:29: first defined here
+collect2: error: ld returned 1 exit status
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.o: In function `Submarine::submarine_default_data()':
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:11: multiple definition of `Submarine::submarine_default_data()'
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.o:/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:11: first defined here
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.o: In function `Submarine::submarine_init()':
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:29: multiple definition of `Submarine::submarine_init()'
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.o:/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:29: first defined here
+collect2: error: ld returned 1 exit status
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.o: In function `Submarine::submarine_default_data()':
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:11: multiple definition of `Submarine::submarine_default_data()'
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.o:/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:11: first defined here
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.o: In function `Submarine::submarine_init()':
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:29: multiple definition of `Submarine::submarine_init()'
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.o:/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:29: first defined here
+collect2: error: ld returned 1 exit status
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.o: In function `Submarine::submarine_default_data()':
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:11: multiple definition of `Submarine::submarine_default_data()'
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.o:/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:11: first defined here
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.o: In function `Submarine::submarine_init()':
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:29: multiple definition of `Submarine::submarine_init()'
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.o:/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:29: first defined here
+collect2: error: ld returned 1 exit status
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.o: In function `Submarine::submarine_default_data()':
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:11: multiple definition of `Submarine::submarine_default_data()'
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.o:/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:11: first defined here
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.o: In function `Submarine::submarine_init()':
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:29: multiple definition of `Submarine::submarine_init()'
+build/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.o:/home/caci114/Project_2023/SIM_submarine/models/submarine/src/../src/submarine_init.cpp:29: first defined here
+collect2: error: ld returned 1 exit status
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_deriv()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:39:64: error: ‘abs’ was not declared in this scope
+  drag_force = (-0.5) * DENSITY_SALT_WATER * vel[1] * abs(vel[1]) * Cd * A; //Force of Drag
+                                                                ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:11:14: error: found ‘:’ in nested-name-specifier, expected ‘::’
+ int Submarine:control(){
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:11:23: error: no ‘int Submarine::control()’ member function declared in class ‘Submarine’
+ int Submarine:control(){
+                       ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:11:14: error: found ‘:’ in nested-name-specifier, expected ‘::’
+ int Submarine:submarine_control(){
+              ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_deriv()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:43:25: error: cannot convert ‘double’ to ‘const char*’ for argument ‘1’ to ‘int printf(const char*, ...)’
+  printf(hull_disp_volume);
+                         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:44:27: error: cannot convert ‘double’ to ‘const char*’ for argument ‘1’ to ‘int printf(const char*, ...)’
+  printf(ballast_air_volume);
+                           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_deriv()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:43:24: error: ‘print’ was not declared in this scope
+  print(hull_disp_volume);
+                        ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_deriv()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:43:24: error: ‘print’ was not declared in this scope
+  print(hull_disp_volume);
+                        ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp: In member function ‘int Submarine::submarine_deriv()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:43:25: error: cannot convert ‘double’ to ‘const char*’ for argument ‘1’ to ‘int printf(const char*, ...)’
+  printf(hull_disp_volume);
+                         ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/Submarine.cpp:44:27: error: cannot convert ‘double’ to ‘const char*’ for argument ‘1’ to ‘int printf(const char*, ...)’
+  printf(ballast_air_volume);
+                           ^
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp: In member function ‘int Submarine::submarine_default_data()’:
+/home/caci114/Project_2023/SIM_submarine/models/submarine/src/submarine_init.cpp:27:2: error: expected ‘;’ before ‘acc’
+  acc[1] = 0.0
+  ^
+build/S_source.cpp: In member function ‘virtual int SubmarineSimObject::call_function(Trick::JobData*)’:
+build/S_source.cpp:1019:23: error: ‘class Submarine’ has no member named ‘control’
+             submarine.control() ;
+                       ^
